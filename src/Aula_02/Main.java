@@ -1,7 +1,7 @@
 package Aula_02;
 
 public class Main {
-    static void main(String[] args) {
+    public static void main(String[] args) {
         Caneta c1 = new Caneta();
 
         c1.cor = "Azul";
@@ -15,6 +15,7 @@ public class Main {
         c1.rabiscar();
 
         System.out.println();
+
         Caneta c2 = new Caneta();
         c2.cor = "Preta";
         c2.ponta = 0.5;
