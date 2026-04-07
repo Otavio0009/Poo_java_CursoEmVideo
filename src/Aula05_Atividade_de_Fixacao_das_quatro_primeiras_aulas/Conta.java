@@ -89,8 +89,12 @@ public class Conta {
 
     public void depositar(double valor) {
         if (this.isStatus()) {
-            this.setSaldo(this.getSaldo() + valor);
-            System.out.println("Deposito realizado na conta de " + this.getDono());
+            if (valor > 0) {
+                this.setSaldo(this.getSaldo() + valor);
+                System.out.println("Deposito realizado na sua conta");
+            } else {
+                System.out.println("Não pode fazer deposito negativo!");
+            }
         } else {
             System.out.println("Impossivel depositar em uma conta feichada");
         }

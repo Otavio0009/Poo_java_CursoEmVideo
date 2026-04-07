@@ -46,5 +46,20 @@ public class Usuario {
 
         conta3.extrato();
 
+        System.out.println();
+
+        Conta conta4 = new Conta();
+
+        conta4.abrirConta("CP");
+
+        conta4.setNumConta(222111);
+
+        conta4.setDono("Ofélia");
+        conta4.depositar(- 200);
+        conta4.sacar(50);
+        conta4.pagarMensal("CP");
+
+        conta4.extrato();
+
     }
 }
