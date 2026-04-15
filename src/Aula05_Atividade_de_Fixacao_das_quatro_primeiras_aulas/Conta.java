@@ -90,24 +90,36 @@ public class Conta {
     public void depositar(double valor) {
         if (this.isStatus()) {
             if (valor > 0) {
+
                 this.setSaldo(this.getSaldo() + valor);
                 System.out.println("Deposito realizado na sua conta");
+
             } else {
+
                 System.out.println("Não pode fazer deposito negativo!");
+
             }
         } else {
+
             System.out.println("Impossivel depositar em uma conta feichada");
         }
     }
 
     public void sacar(double valor) {
         if (this.isStatus()) {
+
             if (this.getSaldo() >= valor) {
+
                 this.setSaldo(this.getSaldo() - valor);
+                System.out.println("Saque realizado na sua conta");
+
             }  else {
+
                 System.out.println("Saldo insuficiente");
             }
+
         } else {
+
             System.out.println("Impossivel sacar em uma conta feichada");
         }
     }
@@ -116,8 +128,11 @@ public class Conta {
         int valor = 0;
 
         if (this.getTipo().equals("CC")) {
+
             valor = 20;
+
         } else if (this.getTipo().equals("CP")) {
+
             valor = 15;
         }
 

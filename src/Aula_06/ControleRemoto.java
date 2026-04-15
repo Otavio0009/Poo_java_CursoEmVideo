@@ -66,8 +66,11 @@ public class ControleRemoto implements Controle {
     @Override
     public void fecharMenu() {
         if (isLigado()){
+
             System.out.println(" Fechando Menu...");
+
         } else {
+
             System.out.println("Teve desligada!");
         }
     }
@@ -75,8 +78,11 @@ public class ControleRemoto implements Controle {
     @Override
     public void maisVolume() {
         if (this.isLigado()) {
+
             this.setVolume(getVolume() + 5);
+
         } else {
+
             System.out.println("Teve desligada!");
         }
     }
@@ -84,8 +90,11 @@ public class ControleRemoto implements Controle {
     @Override
     public void menosVolume() {
         if (this.isLigado()) {
+
             this.setVolume(getVolume() - 5);
+
         } else {
+
             System.out.println("Teve desligada!");
         }
     }
@@ -93,8 +102,11 @@ public class ControleRemoto implements Controle {
     @Override
     public void ligarMudo() {
         if (this.isLigado() &&  this.getVolume() > 0) {
+
             this.setVolume(0);
+
         } else {
+
             System.out.println("Teve desligada!");
         }
     }
@@ -102,8 +114,11 @@ public class ControleRemoto implements Controle {
     @Override
     public void desligarMudo() {
         if (this.isLigado() &&  this.getVolume() == 0) {
+
             setVolume(50);
+
         } else {
+
             System.out.println("Teve desligada!");
         }
     }
@@ -111,8 +126,11 @@ public class ControleRemoto implements Controle {
     @Override
     public void play() {
         if (this.isLigado() && !(this.isTocando())) {
+
             this.setTocando(true);
+
         } else {
+
             System.out.println("Teve desligada!");
         }
     }
@@ -120,8 +138,11 @@ public class ControleRemoto implements Controle {
     @Override
     public void pause() {
         if (this.isLigado() && this.isTocando()) {
+
             this.setTocando(false);
+
         } else {
+
             System.out.println("Teve desligada!");
         }
     }

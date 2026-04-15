@@ -25,7 +25,7 @@ public class Estudar {
     }
 
     void esta(){
-        if(vai == true){
+        if(this.vai == true){
             System.out.println(this.aluno + " está estudando!");
         } else {
             System.out.println(this.aluno + " não está estudando!");
@@ -33,7 +33,7 @@ public class Estudar {
     }
 
     void fazerAtividade(){
-        if (exercicio == true){
+        if (this.exercicio == true){
             System.out.println(this.aluno + " está fazendo o exercicio!");
         } else {
             System.out.println(this.aluno + " não está fazendo o exercicio!");

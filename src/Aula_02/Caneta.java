@@ -8,7 +8,7 @@ public class Caneta {
     double ponta;
 
     void rabiscar() {
-        if (tampada == true) {
+        if (this.tampada == true) {
             System.out.println("Errro! Não posso rabiscar!");
         } else {
             System.out.println("Estou rabiscando!");
