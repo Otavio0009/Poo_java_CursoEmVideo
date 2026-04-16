@@ -6,9 +6,9 @@ public class ControleRemoto implements Controle {
     private boolean tocando;
 
     public ControleRemoto() {
-        volume = 50;
-        ligado = true;
-        tocando = false;
+        this.volume = 50;
+        this.ligado = true;
+        this.tocando = false;
     }
 
     private int getVolume() {
@@ -49,26 +49,29 @@ public class ControleRemoto implements Controle {
 
     @Override
     public void abrirMenu() {
-        if (isLigado()) {
+        if (this.isLigado()) {
+
             System.out.println("----MENU----");
             System.out.println("Está ligado? " + this.isLigado());
             System.out.println("Está tocando? " + this.isTocando());
             System.out.print("Volume: " + this.getVolume());
 
             for (int i = 0; i <= getVolume(); i += 10) {
+
                 System.out.print(" |");
             }
+
         } else {
+
             System.out.println("Teve desligada!");
         }
     }
 
     @Override
     public void fecharMenu() {
-        if (isLigado()){
+        if (this.isLigado()){
 
             System.out.println(" Fechando Menu...");
-
         } else {
 
             System.out.println("Teve desligada!");
@@ -80,7 +83,6 @@ public class ControleRemoto implements Controle {
         if (this.isLigado()) {
 
             this.setVolume(getVolume() + 5);
-
         } else {
 
             System.out.println("Teve desligada!");
@@ -92,7 +94,6 @@ public class ControleRemoto implements Controle {
         if (this.isLigado()) {
 
             this.setVolume(getVolume() - 5);
-
         } else {
 
             System.out.println("Teve desligada!");
@@ -116,7 +117,6 @@ public class ControleRemoto implements Controle {
         if (this.isLigado() &&  this.getVolume() == 0) {
 
             setVolume(50);
-
         } else {
 
             System.out.println("Teve desligada!");
@@ -128,7 +128,6 @@ public class ControleRemoto implements Controle {
         if (this.isLigado() && !(this.isTocando())) {
 
             this.setTocando(true);
-
         } else {
 
             System.out.println("Teve desligada!");
@@ -140,7 +139,6 @@ public class ControleRemoto implements Controle {
         if (this.isLigado() && this.isTocando()) {
 
             this.setTocando(false);
-
         } else {
 
             System.out.println("Teve desligada!");

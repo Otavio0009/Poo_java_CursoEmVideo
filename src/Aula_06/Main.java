@@ -6,13 +6,13 @@ public class Main {
 
         c.ligar();
         c.maisVolume();
-        c.ligarMudo();
-        c.desligarMudo();
+        //c.ligarMudo();
+        //c.desligarMudo();
         c.play();
-        c.pause();
-        c.menosVolume();
-        c.desligar();
+        //c.pause();
+        //c.menosVolume();
+        //c.desligar();
         c.abrirMenu();
-        c.fecharMenu();
+        //c.fecharMenu();
     }
 }
