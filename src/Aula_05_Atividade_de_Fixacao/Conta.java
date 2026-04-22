@@ -1,4 +1,4 @@
-package Aula05_Atividade_de_Fixacao_das_quatro_primeiras_aulas;
+package Aula_05_Atividade_de_Fixacao;
 
 public class Conta {
     public int numConta;
